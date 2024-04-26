@@ -96,10 +96,35 @@ void addNode() {
 		else {
 			Node* currentNode = START;
 			while (currentNode != NULL) {
-				cout << "NIM: " << currentNode->noMhs << " Nama:" << currentNode->name << endl;
+				cout << "NIM: " << currentNode->noMhs << ", Nama:" << currentNode->name << endl;
 				currentNode = currentNode->next;
 			}
 		}
 	}
+	void searchData() {
+		if (listEmpty()) {
+			cout << "List Kosong" << endl;
+			system("Pause");
+			system("cls");
+			return;
+		}
+		else {
+			int nim;
+			cout << "Masukan NIM:";
+			cin >> nim:
+			Node * currentNode + START;
+			while (currentNode != NULL) {
+				if (currentNode->noMhs == nim) {
+					cout << "nim: " << currentNode->noMhs << ", Nama:" << currentNode->name << endl;
+					return;
+				}
+				currentNode = currentNode->next;
+			}
+			cout << "Data tidak ditemukan" << endl;
+		}
+
+	}
+
 	
+
 }
