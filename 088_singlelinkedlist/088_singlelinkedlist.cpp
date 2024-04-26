@@ -37,7 +37,13 @@ void addNode() {
 
 	while ((current != NULL) && (nim >= current->noMhs))
 	{
-		
+		if (nim == current->noMhs)
+		{
+			cout << "NIM sudah ada" << endl;
+			return;
+		}
+		nodeBaru->next = current;
+		precious->next = nodeBaru;
 	}
 
 
