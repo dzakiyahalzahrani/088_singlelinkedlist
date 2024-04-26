@@ -32,4 +32,9 @@ void addNode() {
 		return;
 	}
 
+	Node* precious = START;
+	Node* current = START;
+
+
+
 }
