@@ -46,5 +46,16 @@ void addNode() {
 		precious->next = nodeBaru;
 	}
 
+	bool serachNode(int nim, Node * current, Node * precious) {
+		precious = START;
+		current START;
+		while (current != NNUL && nim nim > current->noMhs)
+		{
+			precious = current;
+			current = current->next;
+
+		}
+	}
+
 
 }
