@@ -32,7 +32,7 @@ void addNode() {
 		return;
 	}
 
-	Node* precious = START;
+	Node* previous = START;
 	Node* current = START;
 
 	while ((current != NULL) && (nim >= current->noMhs))
@@ -43,18 +43,33 @@ void addNode() {
 			return;
 		}
 		nodeBaru->next = current;
-		precious->next = nodeBaru;
+		previous->next = nodeBaru;
 	}
 
-	bool serachNode(int nim, Node * current, Node * precious) {
-		precious = START;
+	bool serachNode(int nim, Node * current, Node * previous) {
+		previous = START;
 		current START;
 		while (current != NNUL && nim nim > current->noMhs)
 		{
-			precious = current;
+			previous = current;
 			current = current->next;
 
 		}
+
+		if (current == NULL)
+		{
+			return false;
+		}
+		else if (current->noMhs == nim)
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
+	
 	}
 
 
