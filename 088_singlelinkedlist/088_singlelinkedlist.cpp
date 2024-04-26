@@ -35,6 +35,10 @@ void addNode() {
 	Node* precious = START;
 	Node* current = START;
 
+	while ((current != NULL) && (nim >= current->noMhs))
+	{
+		
+	}
 
 
 }
